@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <title>JavaScriptの練習</title>
+</head>
+<body>
+  <script>
+    class Character {
+      constructor(name, hp) {
+        this.name = name;
+        this.hp = hp;
+      }
+      
+      attack() {
+        console.log(this.name + 'の攻撃！');
+      }  
+    }
+   
+        //主人公のクラスを作成する
+       class Hero extends Character {
+      
+       // キャラクターを操作するメソッド
+       control() {}
+     
+       // 必殺技を実行するメソッド
+       superAttack() {}
+     
+       // 会話するメソッド
+       speak() {}
+       
+     }
+      
+     //敵のクラスを作成する
+     class Enemy extends Character {
+       
+       // 倒された時に落とすアイテム
+       dropItem() {}
+     
+       // 獲得できるポイント（経験値）
+       getPoint() {}
+       
+     }
+     const hero = new Hero('主人公', 100);
+     const enemy = new Enemy('敵', 10);
+       
+     hero.attack();
+     enemy.attack();
+       
+     // 出力結果
+     // 主人公の攻撃！
+     // 敵の攻撃！
+  </script>　
+</body>
+</html>

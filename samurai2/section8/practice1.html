@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <title>JavaScriptの演習問題</title>
+</head>
+<body>
+  <script>
+  　class Animal {
+      constructor(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+    }
+    
+    class Cat extends Animal {
+      constructor(name, age, type) {
+        super(name, age);
+        this.type = type;
+      }
+    }
+    
+    // 名前・年齢の値は任意でかまいません
+    const cat = new Cat('猫', 3, 'シャム');
+    
+    console.log(cat);
+  </script>　
+</body>
+</html>
